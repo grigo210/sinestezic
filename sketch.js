@@ -1,4 +1,5 @@
 let size = 200;
+let rx,ry;
 let soundLaugh,soundSing;
 
 function setup() {
@@ -8,6 +9,8 @@ function setup() {
   createCanvas(1866,925);
   angleMode(DEGREES);
   ellipseMode(CENTER);
+  rx = random(width);
+  ry = random(height);
 
 }
 function draw() {
@@ -29,7 +32,7 @@ function draw() {
       } else{
       //soundSing.play();
       //soundSing.setLoop(True);
-      rotate();     
+      rotate(atan2(ry-y,rx-x)*frameCount*0.003);     
       }
       fill(255);
       ellipse(0, 0, 20, 24);
