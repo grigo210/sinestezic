@@ -6,13 +6,13 @@ function setup() {
   //soundFormats('mp3');
   //soundLaugh= loadSound('path/laugh.mp3');
  // soundSing = loadSound('https://freesound.org/people/Breviceps/sounds/457043/');
-  createCanvas( 1920,1080);
+  createCanvas(1920,1080);
   angleMode(DEGREES);
   ellipseMode(CENTER);
   rx = random(width);
   ry = random(height);
-
 }
+
 function draw() {
   background(0);
   mouse();
@@ -32,7 +32,7 @@ function draw() {
       } else{
       //soundSing.play();
       //soundSing.setLoop(True);
-      rotate(atan2(ry-y,rx-x)*frameCount*0.009);     
+      rotate(atan2(ry-y,rx-x)*frameCount*0.01);     
       }
       fill(255);
       ellipse(0, 0, 20, 24);
@@ -40,6 +40,7 @@ function draw() {
     }
   }
 }
+
 function mouse() {
   if (
     mouseX >= size - 20 &&
