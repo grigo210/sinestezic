@@ -2,9 +2,9 @@ let size = 300;
 let soundLaugh,soundSing;
 
 function setup() {
- /* soundFormats('mp3');
-  soundLaugh= loadSound('https://www.shockwave-sound.com/sound-effects/laugh-sounds/peoplelaugh.wav');
-  soundSing = loadSound('https://freesound.org/people/Breviceps/sounds/457043/');*/
+  soundFormats('mp3');
+  soundLaugh= loadSound('laugh.mp3');
+ // soundSing = loadSound('https://freesound.org/people/Breviceps/sounds/457043/');
   createCanvas(displayWidth, displayHeight);
   angleMode(DEGREES);
   ellipseMode(CENTER);
@@ -23,8 +23,8 @@ function draw() {
         mouseY >= size - 20 &&
         mouseY <= height - size + 20
       ) {
-      //soundLaugh.play();
-      //soundLaugh.setLoop(True);
+      soundLaugh.play();
+      soundLaugh.setLoop(True);
         rotate(atan2(mouseY - y, mouseX - x) - 90);
       } else{
       //soundSing.play();
