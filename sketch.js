@@ -3,10 +3,10 @@ let rx,ry;
 let soundLaugh,soundSing;
 
 function setup() {
+  createCanvas(windowWidth, windowHeight);
   soundFormats('mp3');
   soundLaugh= loadSound('path/laugh.mp3');
   soundSing = loadSound('path/sing.mp3');
-  createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES);
   ellipseMode(CENTER);
   rx = random(width);
