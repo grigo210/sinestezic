@@ -6,7 +6,7 @@ function setup() {
   //soundFormats('mp3');
   //soundLaugh= loadSound('path/laugh.mp3');
  // soundSing = loadSound('https://freesound.org/people/Breviceps/sounds/457043/');
-  createCanvas(1866,925);
+  createCanvas( 1920,1080);
   angleMode(DEGREES);
   ellipseMode(CENTER);
   rx = random(width);
@@ -32,7 +32,7 @@ function draw() {
       } else{
       //soundSing.play();
       //soundSing.setLoop(True);
-      rotate(atan2(ry-y,rx-x)*frameCount*0.003);     
+      rotate(atan2(ry-y,rx-x)*frameCount*0.009);     
       }
       fill(255);
       ellipse(0, 0, 20, 24);
