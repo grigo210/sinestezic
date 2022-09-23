@@ -3,7 +3,7 @@ let soundLaugh,soundSing;
 
 function setup() {
   soundFormats('mp3');
-  soundLaugh= loadSound('laugh.mp3');
+  soundLaugh= loadSound('path/laugh.mp3');
  // soundSing = loadSound('https://freesound.org/people/Breviceps/sounds/457043/');
   createCanvas(displayWidth, displayHeight);
   angleMode(DEGREES);
