@@ -5,7 +5,7 @@ function setup() {
  /* soundFormats('mp3');
   soundLaugh= loadSound('https://www.shockwave-sound.com/sound-effects/laugh-sounds/peoplelaugh.wav');
   soundSing = loadSound('https://freesound.org/people/Breviceps/sounds/457043/');*/
-  createCanvas(1920,1080);
+  createCanvas(displayWidth, displayHeight);
   angleMode(DEGREES);
   ellipseMode(CENTER);
 
