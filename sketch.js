@@ -5,7 +5,7 @@ let sound1,sound2;
 
 function setup() {
  // preload();
-  createCanvas(700, 700);
+  createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES);
   ellipseMode(CENTER);
   rWidth = random(width);
@@ -13,13 +13,6 @@ function setup() {
 }
 function draw() {
   background(0);
-/*    //grid
-    for (let i=0;i<width;i+=50) {
-    for (let j=0;j<height;j+=50) {
-    fill(0,255,0);
-    rect(i,j,50,50);
-    }}
-  */
   mouse();
   for (let x = size; x <= width - size; x += 50) {
     for (let y = size; y <= height - size; y += 50) {
