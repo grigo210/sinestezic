@@ -1,4 +1,4 @@
-let size = 300;
+let size = 200;
 let soundLaugh,soundSing;
 
 function setup() {
@@ -13,13 +13,13 @@ function setup() {
 function draw() {
   background(0);
   mouse();
-  for (let x = size; x <= width - size; x += 50) {
+  for (let x = size*3; x <= width - size*3; x += 50) {
     for (let y = size; y <= height - size; y += 50) {
       push();
       translate(x, y);
       if (
         mouseX >= size - 20 &&
-        mouseX <= width - size + 20 &&
+        mouseX <= width - size*3 + 20 &&
         mouseY >= size - 20 &&
         mouseY <= height - size + 20
       ) {
@@ -29,7 +29,7 @@ function draw() {
       } else{
       //soundSing.play();
       //soundSing.setLoop(True);
-      rotate(90);     
+      rotate();     
       }
       fill(255);
       ellipse(0, 0, 20, 24);
@@ -40,7 +40,7 @@ function draw() {
 function mouse() {
   if (
     mouseX >= size - 20 &&
-    mouseX <= width - size + 20 &&
+    mouseX <= width - size*3 + 20 &&
     mouseY >= size - 20 &&
     mouseY <= height - size + 20
   ) {
