@@ -1,15 +1,14 @@
-let size = 150;
-let rWidth;
-let rHeight;
-let sound1,sound2;
+let size = 300;
+let soundLaugh,soundSing;
 
 function setup() {
- // preload();
+ /* soundFormats('mp3');
+  soundLaugh= loadSound('https://www.shockwave-sound.com/sound-effects/laugh-sounds/peoplelaugh.wav');
+  soundSing = loadSound('https://freesound.org/people/Breviceps/sounds/457043/');*/
   createCanvas(displayWidth, displayHeight);
   angleMode(DEGREES);
   ellipseMode(CENTER);
-  rWidth = random(width);
-  rHeight = random(height);
+
 }
 function draw() {
   background(0);
@@ -24,13 +23,13 @@ function draw() {
         mouseY >= size - 20 &&
         mouseY <= height - size + 20
       ) {
-      //sound1.play();
-      //sound1.setLoop(True);
+      //soundLaugh.play();
+      //soundLaugh.setLoop(True);
         rotate(atan2(mouseY - y, mouseX - x) - 90);
       } else{
-      //sound2.play();
-      //sound2.setLoop(True);
-      rotate(atan2(rHeight-y,rWidth-x*3)-90* frameCount*0.007);     
+      //soundSing.play();
+      //soundSing.setLoop(True);
+      //rotate(////////////////////////////////////////////////////////////);     
       }
       fill(255);
       ellipse(0, 0, 20, 24);
@@ -49,9 +48,3 @@ function mouse() {
     ellipse(mouseX, mouseY, 55, 55);
   }
 }
-/*
-function preload() {
-  soundFormats('mp3','wav');
-  sound1 = loadSound('https://www.shockwave-sound.com/sound-effects/laugh-sounds/peoplelaugh.wav');
-  sound2 = loadSound('https://freesound.org/people/Breviceps/sounds/457043/');
-}*/
