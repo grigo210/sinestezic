@@ -3,7 +3,7 @@ let soundLaugh,soundSing;
 
 function setup() {
   soundFormats('mp3');
-  soundLaugh= loadSound('path/laugh.mp3');
+  //soundLaugh= loadSound('path/laugh.mp3');
  // soundSing = loadSound('https://freesound.org/people/Breviceps/sounds/457043/');
   createCanvas(1866,925);
   angleMode(DEGREES);
@@ -23,13 +23,13 @@ function draw() {
         mouseY >= size - 20 &&
         mouseY <= height - size + 20
       ) {
-      soundLaugh.play();
-      soundLaugh.setLoop(True);
+      //soundLaugh.play();
+      //soundLaugh.setLoop(True);
         rotate(atan2(mouseY - y, mouseX - x) - 90);
       } else{
       //soundSing.play();
       //soundSing.setLoop(True);
-      //rotate(////////////////////////////////////////////////////////////);     
+      rotate(90);     
       }
       fill(255);
       ellipse(0, 0, 20, 24);
