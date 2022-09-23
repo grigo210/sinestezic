@@ -2,7 +2,7 @@ let size = 300;
 let soundLaugh,soundSing;
 
 function setup() {
-  soundFormats('mp3');
+  //soundFormats('mp3');
   //soundLaugh= loadSound('path/laugh.mp3');
  // soundSing = loadSound('https://freesound.org/people/Breviceps/sounds/457043/');
   createCanvas(1866,925);
