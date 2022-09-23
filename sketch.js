@@ -43,7 +43,7 @@ function draw() {
 
 function mouse() {
   if (
-    mouseX >= size - 20 &&
+    mouseX >= size*3 - 20 &&
     mouseX <= width - size*3 + 20 &&
     mouseY >= size - 20 &&
     mouseY <= height - size + 20
