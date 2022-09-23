@@ -6,7 +6,7 @@ function setup() {
   //soundFormats('mp3');
   //soundLaugh= loadSound('path/laugh.mp3');
  // soundSing = loadSound('https://freesound.org/people/Breviceps/sounds/457043/');
-  createCanvas(1920,1080);
+  createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES);
   ellipseMode(CENTER);
   rx = random(width);
