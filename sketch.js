@@ -5,7 +5,7 @@ let sound1,sound2;
 
 function setup() {
  // preload();
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(displayWidth, displayHeight);
   angleMode(DEGREES);
   ellipseMode(CENTER);
   rWidth = random(width);
