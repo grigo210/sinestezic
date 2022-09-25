@@ -12,8 +12,6 @@ function setup() {
 
 function draw() {
   background(0);
-  fill(255);
-  text(txt,50,height/2-100,400,400);
   mouse();
   txt();
   for (let x = size*5; x <= width - size*1.5; x += 50) {
