@@ -36,35 +36,12 @@ function draw() {
     script = "Now anyone can become a victim of their ridiculousness. \n\n Don't laugh about someone's situation...\n Cause you don't know when you might be in their place.";
     sound.play();
   } else {
-        if(
-      mouseX >= size / 10 &&
-      mouseX <= width - size +700 &&
-      mouseY >= size / 10 + 40 &&
-      mouseY <= height - size + 300 && 
-      mouseClicked()    
-     ){
-      fill(255,fade);
-      rect(size / 10, size / 10 + 30, width - size + 700 , height - size + 300 );
-      fill(0,fade*(-1));
-      script = "You're the one who can decide where this world's awareness goes.\n\n Click here if you allow the speaker.";
-      text(script, size, size, 500, 500);
-     } else {
-      fill(255,fade);
-      script = "You're the one who can decide where this world's awareness goes.\n\n Point your pointer to the people.";
-      text(script, size, size, 500, 500);
-     }     
+      script = "You're the one who can decide where this world's awareness goes. \n\n Point your pointer to the people, click once on someone's head, then move around.";  
     sound.pause();
   }
   fill(255,fade);
   textSize(16);
-  text(script, size, size, 500, 500);  
-    if(
-      mouseX >= size / 10 + 40 &&
-      mouseX <= width - size / 10 &&
-      mouseY >= size / 10 &&
-      mouseY <= height - size / 10 && 
-      mouseClicked()    
-     ){
+  text(script, size, size, 500, 500);
   textSize(11);
   text('Created by Alexandru - Iulian Grigoraș', size, height - size - 50, 500, 100);
   
