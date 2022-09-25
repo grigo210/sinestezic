@@ -7,7 +7,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES);
   ellipseMode(CENTER);
-  sound = new Audio('https://dl.dropboxusercontent.com/s/ei01e2vmt1f3pxi/mySong.mp3');
+  sound = new Audio('laugh.mp3');
   fade = 10;
 }
 
