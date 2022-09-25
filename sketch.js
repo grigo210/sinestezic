@@ -1,6 +1,6 @@
 let size = 200;
 let rx,ry;
-let t = "You are the one who decides the destiny of this world.\n\n Everything seems to be in order and peace.\n\n - move mouse to center of 'heads' -";
+let t;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -51,6 +51,7 @@ function mouse() {
   }
 
 function txt(){
+    t = "You are the one who decides the destiny of this world.\n\n Everything seems to be in order and peace.\n\n - move mouse to center of 'heads' -";
     fill(255);
     text(t,size/2,size,500,500);
   }
