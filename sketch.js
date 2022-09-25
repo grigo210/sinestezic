@@ -23,9 +23,9 @@ function draw() {
       translate(x, y);
       if (
         mouseX >= size*5 - 20 &&
-        mouseX <= width - size*1.5 + 15 &&
+        mouseX <= width - size*1.5 + 10 &&
         mouseY >= size - 20 &&
-        mouseY <= height - size + 10
+        mouseY <= height - size + 5
       ) {
       t = "Now anyone can become a victim of ridicule. \n\n Don't laugh about someone's situation, because you don't know when you might be in their situation.";
       rotate(atan2(mouseY - y, mouseX - x) - 90);
