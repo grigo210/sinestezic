@@ -1,20 +1,19 @@
 let size = 200;
 let script;
 let sound;
-let fade,fadeMotto ;
+let fade;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES);
   ellipseMode(CENTER);
   sound = new Audio('https://dl.dropboxusercontent.com/s/ei01e2vmt1f3pxi/mySong.mp3');
-  sound.play();
-  fade = 0;
-  fadeMotto = 0;
+  fade = 100;
 }
 
 function draw() {
   background(0);
+  sound.play();
   
   //pointer
   if (
@@ -35,17 +34,14 @@ function draw() {
     mouseY <= height - size - 22
   ) {
     script = "Now anyone can become a victim of their ridiculousness. \n\n Don't laugh about someone's situation...\n Cause you don't know when you might be in their place.";
-    fadeMotto = 5;
     //sound.play();
   } else {
     script = "You're the one who can decide where this world's awareness goes.\n\n Move your pointer to the people. ";
-      fadeMotto = 0;
    // sound.pause();
   }
-  fill(250,fadeMotto);
+  fill(250,fade);
   textSize(16);
   text(script, size, size, 500, 500);
-  fill(250,fade);
   textSize(11);
   text('Created by Alexandru - Iulian Grigoraș', size, height - size - 50, 500, 100);
   
@@ -60,5 +56,4 @@ function draw() {
     }
   }
     fade += 1;
-    fadeMotto += 1;
 }
