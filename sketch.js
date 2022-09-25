@@ -2,7 +2,7 @@ let size = 200;
 let t,a;
 
 function preload(){
-  a = loadSound("laugh.mp3');
+ // a = loadSound("laugh.mp3');
 }
 
 function setup() {
@@ -31,10 +31,10 @@ function draw() {
     mouseY <= height - size - 15
   ) {
     t = "Now anyone can become a victim of their ridiculousness. \n\n Don't laugh about someone's situation...\n Cause you don't know when you might be in their place.";
-    a.loop();
+   // a.loop();
   } else {
     t = "You're the one who can decide where this world's awareness goes.\n\n Move your pointer to the people. ";
-    a.stop();
+   // a.stop();
   }
   fill(255);
   textSize(16);
