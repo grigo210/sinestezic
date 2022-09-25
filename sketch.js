@@ -29,8 +29,8 @@ function draw() {
   
   //text
   if (
-    mouseX >= size * 5 - 20 &&
-    mouseX <= width - size * 1.5 - 15 &&
+    mouseX >= size * 6 - 20 &&
+    mouseX <= width - size - 15 &&
     mouseY >= size - 20 &&
     mouseY <= height - size - 22
   ) {
@@ -46,7 +46,7 @@ function draw() {
   text('Created by Alexandru - Iulian Grigoraș', size, height - size - 50, 500, 100);
   
   //grid of ellipses
-  for (let x = size * 5; x <= width - size * 1.5; x += 50) {
+  for (let x = size * 6; x <= width - size; x += 50) {
     for (let y = size; y <= height - size; y += 50) {
       push();
       translate(x, y);
