@@ -28,7 +28,7 @@ function draw() {
     mouseX >= size * 5 - 20 &&
     mouseX <= width - size * 1.5 - 10 &&
     mouseY >= size - 20 &&
-    mouseY <= height - size - 15
+    mouseY <= height - size - 20
   ) {
     t = "Now anyone can become a victim of their ridiculousness. \n\n Don't laugh about someone's situation...\n Cause you don't know when you might be in their place.";
    // a.loop();
