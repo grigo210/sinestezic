@@ -37,11 +37,7 @@ function draw() {
     sound.play();
   } else {
     script = "You're the one who can decide where this world's awareness goes.\n\n Move your pointer to the people. ";
-      if(fade>0){
-      fadeMotto = 5;
-      } else {
       fadeMotto = 0;
-      }
     sound.pause();
   }
   fill(250,fadeMotto);
