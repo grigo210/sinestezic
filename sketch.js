@@ -45,6 +45,7 @@ function draw() {
     text(script, size, size, 500, 500);
     sound.pause();
   }
+  fill(250,fade);
   textSize(11);
   text('Created by Alexandru - Iulian Grigoraș', size, height - size - 50, 500, 100);
   
@@ -54,7 +55,7 @@ function draw() {
       push();
       translate(x, y);
       rotate(atan2(mouseY - y, mouseX - x) - 90);
-      fill(255);
+      fill(250,fade);
       ellipse(0, 0, 20, 23);
       pop();
     }
