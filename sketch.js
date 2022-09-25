@@ -31,7 +31,7 @@ function draw() {
         mouseY >= size - 20 &&
         mouseY <= height - size
       ) {
-        t = "Now everyone becomes a victim of their own sin. \n\n Don't laugh about someone's situation, because you don't know when you might be in their situation.";
+        t = "Now anyone can become the victim of ridicule. \n\n Don't laugh about someone's situation, because you don't know when you might be in their situation.";
         rotate(atan2(mouseY - y, mouseX - x) - 90);
       } else{
       t = "Now is peace again.";
