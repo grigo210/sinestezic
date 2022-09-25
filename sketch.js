@@ -23,15 +23,15 @@ function draw() {
       translate(x, y);
       if (
         mouseX >= size*5 - 20 &&
-        mouseX <= width - size + 30 &&
+        mouseX <= width - size*1.5 + 15 &&
         mouseY >= size - 20 &&
-        mouseY <= height - size + 25
+        mouseY <= height - size + 10
       ) {
       t = "Now anyone can become a victim of ridicule. \n\n Don't laugh about someone's situation, because you don't know when you might be in their situation.";
       rotate(atan2(mouseY - y, mouseX - x) - 90);
       } else{
-      t = "You are the one who decides the destiny of this world.\n\n Everything seems to be in order and peace.\n\n - move mouse to center of 'heads' -";
-      rotate(atan2(ry-y,rx-x)*frameCount*0.01);     
+      t = "You are the one who decides the destiny of this world.\n\n Everything seems to be in order and peace.\n\n\n\n\n\n\n\n Move mouse to center of 'heads' ";
+      rotate(atan2(ry-y,rx-x)*frameCount*0.05);     
       }
       fill(255);
       ellipse(0, 0, 20, 24);
