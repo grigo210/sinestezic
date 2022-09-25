@@ -26,12 +26,12 @@ function draw() {
   //text
   if (
     mouseX >= size * 5 - 20 &&
-    mouseX <= width - size * 1.5 &&
+    mouseX <= width - size * 1.5 - 10 &&
     mouseY >= size - 20 &&
-    mouseY <= height - size - 5
+    mouseY <= height - size - 15
   ) {
     t = "Now anyone can become a victim of their ridiculousness. \n\n Don't laugh about someone's situation...\n Cause you don't know when you might be in their place.";
-    a.play();
+    a.loop();
   } else {
     t = "You're the one who can decide where this world's awareness goes.\n\n Move your pointer to the people. ";
     a.stop();
