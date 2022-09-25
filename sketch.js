@@ -1,12 +1,12 @@
 let size = 200;
 let script;
- 
-
+let sound;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES);
   ellipseMode(CENTER);
+  sound = new Audio('laugh.mp3');
 }
 
 function draw() {
@@ -29,10 +29,10 @@ function draw() {
     mouseY <= height - size - 22
   ) {
     script = "Now anyone can become a victim of their ridiculousness. \n\n Don't laugh about someone's situation...\n Cause you don't know when you might be in their place.";
-    //sound.loop();
+    sound.play();
   } else {
     script = "You're the one who can decide where this world's awareness goes.\n\n Move your pointer to the people. ";
-    //sound.stop();
+    sound.pause();
   }
   fill(255);
   textSize(16);
