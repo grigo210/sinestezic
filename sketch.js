@@ -31,7 +31,7 @@ function draw() {
       rotate(atan2(mouseY - y, mouseX - x) - 90);
       } else{
       t = "You are the one who decides the destiny of this world.\n\n Everything seems to be in order and peace.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Move mouse to center of the 'heads' ";
-      rotate(atan2(ry-y,rx-x)*frameCount*0.04);     
+      rotate(atan2(ry-y,rx-x)*frameCount*0.03);     
       }
       fill(255);
       ellipse(0, 0, 20, 23);
