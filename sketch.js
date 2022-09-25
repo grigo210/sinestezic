@@ -12,10 +12,10 @@ function setup() {
 
 function draw() {
   background(0);
-  if(   mouseX >= size/2 &&
-        mouseX <= width - size/2 &&
-        mouseY >= size/2 &&
-        mouseY <= height - size/2
+  if(   mouseX >= size/10 &&
+        mouseX <= width - size/10 &&
+        mouseY >= size/10 &&
+        mouseY <= height - size/10
      ){
         fill(220, 20, 60);
         ellipse(mouseX, mouseY, 55, 55);
