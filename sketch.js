@@ -1,7 +1,8 @@
 let size = 200;
 let script;
 let sound;
-let fade;
+let fadeShape,fadeSound;
+let p = 1;
 
 function setup() {
   this.focus();
@@ -10,11 +11,13 @@ function setup() {
   ellipseMode(CENTER);
   sound = new Audio('laugh.mp3');
   script = "You're the one who can decide where this world's awareness goes. \n\n Click once on this text to allow speaker, point your pointer to the people, then move around.";  
-  fade = 0;
+  fadeShape = 0;
+  fadeSound = 0;
 }
 
 function draw() {
   background(0);
+  sound.volume(fadeSound);
   
   //pointer
   if (
@@ -23,7 +26,7 @@ function draw() {
     mouseY >= size / 10 &&
     mouseY <= height - size / 10
   ) {
-    fill(220, 20, 60,fade);
+    fill(220, 20, 60,fadeShape);
     ellipse(mouseX, mouseY, 55, 55);
   }
   
@@ -34,13 +37,15 @@ function draw() {
     mouseY >= size - 20 &&
     mouseY <= height - size - 22
   ) {
-    fade = 10;
     script = "Anyone can become a victim of their ridiculousness. \n\n Don't laugh about someone's situation...\n Cause you don't know when you might be in their place.";
+    p = 1;
     sound.play();
   } else {
+    p = -10;
+    sound.volume(fadeSound);
     sound.pause();
   }
-  fill(255,fade);
+  fill(255,fadeShape);
   textSize(16);
   text(script, size, size, 550, 500);
   textSize(11);
@@ -56,5 +61,6 @@ function draw() {
       pop();
     }
   }
-    fade +=1 ;
+    fadeShape += 1 ;
+    fadeSound += p;
 }
