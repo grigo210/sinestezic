@@ -54,5 +54,5 @@ function draw() {
       pop();
     }
   }
-    fade += 1;
+    fade = (fade + 1)*frameCount;
 }
