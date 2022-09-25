@@ -8,21 +8,22 @@ function setup() {
   ellipseMode(CENTER);
   rx = random(width);
   ry = random(height);
+  t = "You are the one who decides the destiny of this world.\n\n Everything seems to be in order and peace.\n\n - move mouse to center of 'heads' -";
 }
 
 function draw() {
   background(0);
-  mouse();
   txt();
+  mouse();
   for (let x = size*5; x <= width - size*1.5; x += 50) {
     for (let y = size; y <= height - size; y += 50) {
       push();
       translate(x, y);
       if (
         mouseX >= size*5 - 20 &&
-        mouseX <= width - size*1.7 + 20 &&
+        mouseX <= width - size*1.5 + 20 &&
         mouseY >= size - 20 &&
-        mouseY <= height - size*1.7 + 20
+        mouseY <= height - size + 20
       ) {
         t = "Now everyone becomes a victim of their own sin. \n\n Don't laugh about someone's situation, because you don't know when you might be in their situation.";
         rotate(atan2(mouseY - y, mouseX - x) - 90);
@@ -37,22 +38,21 @@ function draw() {
   }
 }
 
-function txt(){
-    t = "You are the one who decides the destiny of this world.\n\n Everything seems to be in order and peace.\n\n - move mouse to center of 'heads' -";
-    fill(255);
-    textSize(20);
-    text(t,size,size,500,500);
-  }
-
 function mouse() {
   if (
     mouseX >= size*5 - 20 &&
-    mouseX <= width - size*1.7 + 20 &&
+    mouseX <= width - size*1.5 + 20 &&
     mouseY >= size - 20 &&
-    mouseY <= height - size*1.7 + 20
+    mouseY <= height - size + 20
   ) {
     fill(220, 20, 60);
     ellipse(mouseX, mouseY, 55, 55);
+  }
+  
+  function txt(){
+    fill(255);
+    textSize(20);
+    text(t,size,size,500,500);
   }
   
 }
