@@ -41,7 +41,7 @@ function draw() {
   }
   fill(255,fade);
   textSize(16);
-  text(script, size, size, 500, 500);
+  text(script, size, size, 550, 500);
   textSize(11);
   text('Created by Alexandru - Iulian Grigoraș', size, height - size - 50, 500, 100);
   
