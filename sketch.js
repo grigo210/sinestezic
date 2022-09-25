@@ -34,7 +34,6 @@ function draw() {
         t = "Now anyone can become the victim of ridicule. \n\n Don't laugh about someone's situation, because you don't know when you might be in their situation.";
         rotate(atan2(mouseY - y, mouseX - x) - 90);
       } else{
-      t = "Now is peace again.";
       rotate(atan2(ry-y,rx-x)*frameCount*0.01);     
       }
       fill(255);
