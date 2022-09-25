@@ -2,12 +2,6 @@ let size = 200;
 let rx,ry;
 let t;
 
-function txt(){
-    fill(255);
-    textSize(20);
-    text(t,size,size,500,500);
-  }
-
 function setup() {
   createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES);
@@ -18,8 +12,11 @@ function setup() {
 
 function draw() {
   background(0);
-  mouse();
-  txt();
+  fill(220, 20, 60);
+  ellipse(mouseX, mouseY, 55, 55);
+  fill(255);
+  textSize(20);
+  text(t,size,size,500,500);
   for (let x = size*5; x <= width - size*1.5; x += 50) {
     for (let y = size; y <= height - size; y += 50) {
       push();
@@ -42,16 +39,5 @@ function draw() {
     }
   }
 }
-
-function mouse() {
-  if (
-    mouseX >= size*5 - 20 &&
-    mouseX <= width - size + 30 &&
-    mouseY >= size - 20 &&
-    mouseY <= height - size + 25
-  ) {
-    fill(220, 20, 60);
-    ellipse(mouseX, mouseY, 55, 55);
-  }
-  
+ 
 }
