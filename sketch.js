@@ -8,7 +8,7 @@ function setup() {
   angleMode(DEGREES);
   ellipseMode(CENTER);
   sound = new Audio('https://dl.dropboxusercontent.com/s/ei01e2vmt1f3pxi/mySong.mp3');
-  fade = 100;
+  fade = 10;
 }
 
 function draw() {
