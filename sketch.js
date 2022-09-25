@@ -58,5 +58,6 @@ function draw() {
       pop();
     }
   }
-    fade += 1; 
+    fade += 1;
+    fadeMotto += 1;
 }
