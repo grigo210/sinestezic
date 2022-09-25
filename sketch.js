@@ -49,9 +49,9 @@ function mouse() {
     fill(220, 20, 60);
     ellipse(mouseX, mouseY, 55, 55);
   }
-}
 
 function txt(){
     fill(255);
     text(t,size/2,size,500,500);
+  }
 }
