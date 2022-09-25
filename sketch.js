@@ -9,6 +9,7 @@ function setup() {
   angleMode(DEGREES);
   ellipseMode(CENTER);
   sound = new Audio('laugh.mp3');
+  script = "You're the one who can decide where this world's awareness goes. \n\n Click once on this text to allow speaker, point your pointer to the people, then move around.";  
   fade = 0;
 }
 
@@ -33,10 +34,9 @@ function draw() {
     mouseY >= size - 20 &&
     mouseY <= height - size - 22
   ) {
-    script = "Now anyone can become a victim of their ridiculousness. \n\n Don't laugh about someone's situation...\n Cause you don't know when you might be in their place.";
+    script = "Anyone can become a victim of their ridiculousness. \n\n Don't laugh about someone's situation...\n Cause you don't know when you might be in their place.";
     sound.play();
   } else {
-    script = "You're the one who can decide where this world's awareness goes. \n\n Click once on this text to allow speaker, point your pointer to the people, then move around.";  
     sound.pause();
   }
   fill(255,fade);
