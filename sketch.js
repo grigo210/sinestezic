@@ -42,7 +42,6 @@ function draw() {
   fill(250,fade);
   textSize(16);
   text(script, size, size, 500, 500);
-  fade += fadeAmount; 
   textSize(11);
   text('Created by Alexandru - Iulian Grigoraș', size, height - size - 50, 500, 100);
   
@@ -57,4 +56,5 @@ function draw() {
       pop();
     }
   }
+    fade += fadeAmount; 
 }
