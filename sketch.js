@@ -22,7 +22,7 @@ function draw() {
     mouseY >= size / 10 &&
     mouseY <= height - size / 10
   ) {
-    fill(220, 20, 60);
+    fill(220, 20, 60,fade);
     ellipse(mouseX, mouseY, 55, 55);
   }
   
