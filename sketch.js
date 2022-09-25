@@ -9,7 +9,7 @@ function setup() {
   angleMode(DEGREES);
   ellipseMode(CENTER);
   sound = new Audio('laugh.mp3');
-  fade = 10;
+  fade = 0;
 }
 
 function draw() {
@@ -55,5 +55,5 @@ function draw() {
       pop();
     }
   }
-    fade = (fade + 1)*frameCount;
+    fade +=1 ;
 }
