@@ -1,5 +1,6 @@
 let size = 200;
 let script;
+let song;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -24,7 +25,7 @@ function draw() {
     mouseX >= size * 5 - 20 &&
     mouseX <= width - size * 1.5 - 15 &&
     mouseY >= size - 20 &&
-    mouseY <= height - size - 20
+    mouseY <= height - size - 22
   ) {
     script = "Now anyone can become a victim of their ridiculousness. \n\n Don't laugh about someone's situation...\n Cause you don't know when you might be in their place.";
    // a.loop();
