@@ -24,7 +24,7 @@ function draw() {
         mouseX >= size*5 - 20 &&
         mouseX <= width - size*1.6 + 20 &&
         mouseY >= size - 20 &&
-        mouseY <= height - size + 20
+        mouseY <= height - size*1.6 + 20
       ) {
         t = "Now everyone becomes a victim of their own sin. \n\n Don't laugh at someone's situation, because you don't know when you might be in their situation.";
         rotate(atan2(mouseY - y, mouseX - x) - 90);
@@ -44,7 +44,7 @@ function mouse() {
     mouseX >= size*5 - 20 &&
     mouseX <= width - size*1.6 + 20 &&
     mouseY >= size - 20 &&
-    mouseY <= height - size + 20
+    mouseY <= height - size*1.6 + 20
   ) {
     fill(220, 20, 60);
     ellipse(mouseX, mouseY, 55, 55);
