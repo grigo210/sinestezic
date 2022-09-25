@@ -1,10 +1,7 @@
 let size = 200;
 let script;
-//let sound;
+ 
 
-/*function preload(){
-  sound = loadSound('laugh.mp3');
-}*/
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
