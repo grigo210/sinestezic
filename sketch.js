@@ -21,8 +21,8 @@ function draw() {
       push();
       translate(x, y);
       if (
-        mouseX >= size - 20 &&
-        mouseX <= width - size*1.5 + 20 &&
+        mouseX >= size*5 - 20 &&
+        mouseX <= width - size*1.6 + 20 &&
         mouseY >= size - 20 &&
         mouseY <= height - size + 20
       ) {
