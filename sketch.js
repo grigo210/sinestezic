@@ -12,8 +12,14 @@ function setup() {
 
 function draw() {
   background(0);
-  fill(220, 20, 60);
-  ellipse(mouseX, mouseY, 55, 55);
+  if(   mouseX >= size/2 &&
+        mouseX <= width - size/2 &&
+        mouseY >= size/2 &&
+        mouseY <= height - size/2
+     ){
+        fill(220, 20, 60);
+        ellipse(mouseX, mouseY, 55, 55);
+      } 
   fill(255);
   textSize(18);
   text(t,size,size,500,500);
