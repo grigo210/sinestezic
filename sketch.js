@@ -26,7 +26,7 @@ function draw() {
   //text
   if (
     mouseX >= size * 5 - 20 &&
-    mouseX <= width - size * 1.5 - 10 &&
+    mouseX <= width - size * 1.5 - 15 &&
     mouseY >= size - 20 &&
     mouseY <= height - size - 20
   ) {
