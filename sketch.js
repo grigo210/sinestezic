@@ -1,6 +1,10 @@
 let size = 200;
 let script;
-let song;
+let sound;
+
+function preload(){
+  sound = loadSound('laugh.mp3');
+}
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -28,10 +32,10 @@ function draw() {
     mouseY <= height - size - 22
   ) {
     script = "Now anyone can become a victim of their ridiculousness. \n\n Don't laugh about someone's situation...\n Cause you don't know when you might be in their place.";
-   // a.loop();
+    sound.loop();
   } else {
     script = "You're the one who can decide where this world's awareness goes.\n\n Move your pointer to the people. ";
-   // a.stop();
+    sound.stop();
   }
   fill(255);
   textSize(16);
