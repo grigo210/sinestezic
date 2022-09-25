@@ -14,7 +14,6 @@ function setup() {
   ellipseMode(CENTER);
   rx = random(width);
   ry = random(height);
-  t = "You are the one who decides the destiny of this world.\n\n Everything seems to be in order and peace.\n\n - move mouse to center of 'heads' -";
 }
 
 function draw() {
@@ -31,9 +30,10 @@ function draw() {
         mouseY >= size - 20 &&
         mouseY <= height - size + 30
       ) {
-        t = "Now anyone can become the victim of ridicule. \n\n Don't laugh about someone's situation, because you don't know when you might be in their situation.";
-        rotate(atan2(mouseY - y, mouseX - x) - 90);
+      t = "Now anyone can become the victim of ridicule. \n\n Don't laugh about someone's situation, because you don't know when you might be in their situation.";
+      rotate(atan2(mouseY - y, mouseX - x) - 90);
       } else{
+      t = "You are the one who decides the destiny of this world.\n\n Everything seems to be in order and peace.\n\n - move mouse to center of 'heads' -";
       rotate(atan2(ry-y,rx-x)*frameCount*0.01);     
       }
       fill(255);
