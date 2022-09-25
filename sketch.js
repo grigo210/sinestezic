@@ -2,7 +2,7 @@ let size = 200;
 let script;
 let sound;
 let fade;
-let fadeAmount = 1
+let fadeAmount = 1;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -39,9 +39,10 @@ function draw() {
     script = "You're the one who can decide where this world's awareness goes.\n\n Move your pointer to the people. ";
     sound.pause();
   }
-  fill(250);
+  fill(250,fade);
   textSize(16);
   text(script, size, size, 500, 500);
+  fade += fadeAmount; 
   textSize(11);
   text('Created by Alexandru - Iulian Grigoraș', size, height - size - 50, 500, 100);
   
