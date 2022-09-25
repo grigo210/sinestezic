@@ -39,7 +39,7 @@ function draw() {
     script = "You're the one who can decide where this world's awareness goes.\n\n Move your pointer to the people. ";
    // sound.pause();
   }
-  fill(250,fade);
+  fill(255,fade);
   textSize(16);
   text(script, size, size, 500, 500);
   textSize(11);
