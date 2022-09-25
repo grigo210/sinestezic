@@ -36,7 +36,7 @@ function draw() {
     script = "Now anyone can become a victim of their ridiculousness. \n\n Don't laugh about someone's situation...\n Cause you don't know when you might be in their place.";
     sound.play();
   } else {
-    script = "You're the one who can decide where this world's awareness goes.\n\n Move your pointer to the people. ";
+    script = "You're the one who can decide where this world's awareness goes.\n\n Move the pointer over someone's head and click. ";
     sound.pause();
   }
   fill(255,fade);
