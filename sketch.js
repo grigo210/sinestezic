@@ -21,7 +21,7 @@ function draw() {
         ellipse(mouseX, mouseY, 55, 55);
       } 
   fill(255);
-  textSize(18);
+  textSize(16);
   text(t,size,size,500,500);
   for (let x = size*5; x <= width - size*1.5; x += 50) {
     for (let y = size; y <= height - size; y += 50) {
@@ -36,8 +36,8 @@ function draw() {
       t = "Now anyone can become a victim of ridiculous. \n\n Don't laugh about someone's situation, because you don't know when you might be in their situation.";
       rotate(atan2(mouseY - y, mouseX - x) - 90);
       } else{
-      t = "You are the one who decides the destiny of this world.\n\n Everything seems to be in order and peace.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Move mouse to center of the 'heads' ";
-      rotate(atan2(ry-y,rx-x)*frameCount*0.03);     
+      t = "You're the one who can decide where this world's awareness goes.\n\n Move your pointer to the people. ";
+      rotate(frameCount*0.03);     
       }
       fill(255);
       ellipse(0, 0, 20, 23);
