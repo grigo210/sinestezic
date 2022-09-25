@@ -1,5 +1,4 @@
 let size = 200;
-let rx,ry;
 let t;
 
 function setup() {
