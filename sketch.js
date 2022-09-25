@@ -15,7 +15,7 @@ function draw() {
   fill(220, 20, 60);
   ellipse(mouseX, mouseY, 55, 55);
   fill(255);
-  textSize(16);
+  textSize(18);
   text(t,size,size,500,500);
   for (let x = size*5; x <= width - size*1.5; x += 50) {
     for (let y = size; y <= height - size; y += 50) {
