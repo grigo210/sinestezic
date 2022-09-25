@@ -53,6 +53,6 @@ function mouse() {
 function txt(){
     t = "You are the one who decides the destiny of this world.\n\n Everything seems to be in order and peace.\n\n - move mouse to center of 'heads' -";
     fill(255);
-    text(t,size/2,size,500,500);
+    text(t,size,size,500,500);
   }
 }
