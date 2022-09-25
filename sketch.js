@@ -37,6 +37,13 @@ function draw() {
   }
 }
 
+function txt(){
+    t = "You are the one who decides the destiny of this world.\n\n Everything seems to be in order and peace.\n\n - move mouse to center of 'heads' -";
+    fill(255);
+    textSize(20);
+    text(t,size,size,500,500);
+  }
+
 function mouse() {
   if (
     mouseX >= size*5 - 20 &&
@@ -47,11 +54,5 @@ function mouse() {
     fill(220, 20, 60);
     ellipse(mouseX, mouseY, 55, 55);
   }
-
-function txt(){
-    t = "You are the one who decides the destiny of this world.\n\n Everything seems to be in order and peace.\n\n - move mouse to center of 'heads' -";
-    fill(255);
-    textSize(20);
-    text(t,size,size,500,500);
-  }
+  
 }
