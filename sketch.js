@@ -43,7 +43,7 @@ function draw() {
   textSize(16);
   text(script, size, size, 500, 500);
   textSize(11);
-  text('Created by Alexandru - Iulian Grigoraș', size, height - size - 45, 500, 100);
+  text('Created by Alexandru - Iulian Grigoraș', size, height - size - 50, 500, 100);
   
   //grid of ellipses
   for (let x = size * 5; x <= width - size * 1.5; x += 50) {
