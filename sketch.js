@@ -12,7 +12,7 @@ function setup() {
 function draw() {
   background(0);
   mouse();
-  for (let x = size*3.5; x <= width - size*2; x += 50) {
+  for (let x = size*4; x <= width - size*2; x += 50) {
     for (let y = size; y <= height - size; y += 50) {
       push();
       translate(x, y);
@@ -35,7 +35,7 @@ function draw() {
 
 function mouse() {
   if (
-    mouseX >= size*3.5 - 20 &&
+    mouseX >= size*4 - 20 &&
     mouseX <= width - size*2 + 20 &&
     mouseY >= size - 20 &&
     mouseY <= height - size + 20
