@@ -34,6 +34,7 @@ function draw() {
     mouseY >= size - 20 &&
     mouseY <= height - size - 22
   ) {
+    fade = 10;
     script = "Anyone can become a victim of their ridiculousness. \n\n Don't laugh about someone's situation...\n Cause you don't know when you might be in their place.";
     sound.play();
   } else {
