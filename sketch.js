@@ -2,6 +2,12 @@ let size = 200;
 let rx,ry;
 let t;
 
+function txt(){
+    fill(255);
+    textSize(20);
+    text(t,size,size,500,500);
+  }
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES);
@@ -37,12 +43,6 @@ function draw() {
     }
   }
 }
-
-function txt(){
-    fill(255);
-    textSize(20);
-    text(t,size,size,500,500);
-  }
 
 function mouse() {
   if (
