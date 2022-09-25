@@ -42,7 +42,6 @@ function draw() {
     sound.play();
   } else {
     p = -10;
-    sound.volume(fadeSound);
     sound.pause();
   }
   fill(255,fadeShape);
