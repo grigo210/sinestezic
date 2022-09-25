@@ -26,11 +26,9 @@ function draw() {
     mouseY >= size - 20 &&
     mouseY <= height - size - 5
   ) {
-    t =
-      "Now anyone can become a victim of ridiculous. \n\n Don't laugh about someone's situation, because you don't know when you might be in their situation.";
+    t = "Now anyone can become a victim of ridiculous. \n\n Don't laugh about someone's situation, because you don't know when you might be in their situation.";
   } else {
-    t =
-      "You're the one who can decide where this world's awareness goes.\n\n Move your pointer to the people. ";
+    t = "You're the one who can decide where this world's awareness goes.\n\n Move your pointer to the people. ";
   }
   fill(255);
   textSize(16);
