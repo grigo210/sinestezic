@@ -5,7 +5,6 @@ let fadeShape,fadeSound;
 let p = 1;
 
 function setup() {
-  this.focus();
   createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES);
   ellipseMode(CENTER);
