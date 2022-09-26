@@ -1,8 +1,7 @@
 let size = 200;
 let script;
 let sound;
-let fadeShape,fadeSound;
-let p = 1;
+let fadeShapeș
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -11,12 +10,10 @@ function setup() {
   sound = new Audio('laugh.mp3');
   script = "You're the one who can decide where this world's awareness goes. \n\n Click once on this text to allow speaker, point your pointer to the people, then move around.";  
   fadeShape = 0;
-  fadeSound = 0;
 }
 
 function draw() {
   background(0);
-  sound.volume(fadeSound);
   
   //pointer
   if (
@@ -37,10 +34,8 @@ function draw() {
     mouseY <= height - size - 22
   ) {
     script = "Anyone can become a victim of their ridiculousness. \n\n Don't laugh about someone's situation...\n Cause you don't know when you might be in their place.";
-    p = 1;
     sound.play();
   } else {
-    p = -10;
     sound.pause();
   }
   fill(255,fadeShape);
@@ -60,5 +55,4 @@ function draw() {
     }
   }
     fadeShape += 1 ;
-    fadeSound += p;
 }
