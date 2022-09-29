@@ -50,7 +50,7 @@ function draw() {
       push();
       translate(x, y);
       rotate(atan2(mouseY - y, mouseX - x) - 90);
-      ellipse(0, 0, 20, 23);
+      ellipse(0, 0, 20, 23.5);
       pop();
     }
   }
