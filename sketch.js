@@ -1,7 +1,7 @@
 let size = 200;
 let script;
 let sound;
-let fadeShapeș
+let fadeShape;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
